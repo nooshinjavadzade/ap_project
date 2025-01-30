@@ -7,6 +7,7 @@ public class person {
     private String gender;
     private String bodyshape;
     private String monasebat;
+    public int BMI;
 
     public person(int age, int height, int weight, String gender, String bodyshape, String monasebat) {
         this.age = age;
