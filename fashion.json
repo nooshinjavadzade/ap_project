@@ -1,0 +1,272 @@
+[
+    {
+        "name": "Casual",
+        "min": 15,
+        "max": 40,
+        "definition": "The casual style refers to comfortable and informal clothing suitable for everyday use, typically including t-shirts, jeans, and comfortable shoes.",
+        "bodyShape": "Suitable for most body shapes",
+        "bodyType": "Suitable for all body types",
+        "occasion": "Everyday wear, casual outings, and relaxed gatherings."
+    },
+    {
+        "name": "Formal",
+        "min": 20,
+        "max": 60,
+        "definition": "The formal style includes clothing designed for special and formal occasions, such as suits, formal shirts, and classic shoes.",
+        "bodyShape": "Suitable for various body shapes (rectangular, apple, inverted triangle)",
+        "bodyType": "Suitable for medium and slim body types",
+        "occasion": "Weddings, business meetings, formal events, and galas."
+    },
+    {
+        "name": "Chic",
+        "min": 20,
+        "max": 50,
+        "definition": "The chic style refers to clothing that creates an attractive and classy appearance with modern and beautiful designs, typically used at parties and social events.",
+        "bodyShape": "Suitable for various body shapes",
+        "bodyType": "Suitable for medium and slim body types",
+        "occasion": "Cocktail parties, social events, and upscale gatherings."
+    },
+    {
+        "name": "Bohemian",
+        "min": 18,
+        "max": 40,
+        "definition": "The bohemian style refers to free and informal clothing with diverse patterns and colors, often inspired by various cultures, conveying a sense of freedom and creativity.",
+        "bodyShape": "Suitable for various body shapes",
+        "bodyType": "Suitable for all body types",
+        "occasion": "Music festivals, art events, and casual gatherings."
+    },
+    {
+        "name": "Punk",
+        "min": 15,
+        "max": 35,
+        "definition": "The punk style refers to clothing with bold and edgy designs, typically including leather, studs, and unusual patterns, recognized as a symbol of rebellion and nonconformity.",
+        "bodyShape": "More suitable for slim and average body shapes (rectangular and inverted triangle)",
+        "bodyType": "Suitable for slim body types",
+        "occasion": "Concerts, alternative events, and casual outings."
+    },
+    {
+        "name": "Gothic",
+        "min": 16,
+        "max": 35,
+        "definition": "The gothic style refers to clothing with dark colors, unusual designs, and specific details that typically convey a mysterious and dark atmosphere.",
+        "bodyShape": "Suitable for various body shapes",
+        "bodyType": "Suitable for all body types",
+        "occasion": "Gothic events, themed parties, and alternative gatherings."
+    },
+    {
+        "name": "Sporty",
+        "min": 15,
+        "max": 40,
+        "definition": "The sporty style includes clothing designed for sports and daily activities, typically including sports t-shirts, shorts, and athletic shoes.",
+        "bodyShape": "Suitable for various body shapes (rectangular and inverted triangle)",
+        "bodyType": "Suitable for all body types",
+        "occasion": "Sports events, casual outings, and workouts."
+    },
+    {
+        "name": "Luxury",
+        "min": 25,
+        "max": 60,
+        "definition": "The luxury style refers to high-quality clothing with unique designs and luxury brands, used for special events and formal parties.",
+        "bodyShape": "Suitable for various body shapes",
+        "bodyType": "Suitable for medium and slim body types",
+        "occasion": "High-end events, galas, and formal dinners."
+    },
+    {
+        "name": "Streetwear",
+        "min": 15,
+        "max": 30,
+        "definition": "The streetwear style refers to clothing with youthful and informal designs, typically inspired by urban and street culture.",
+        "bodyShape": "Suitable for various body shapes",
+        "bodyType": "Suitable for all body types",
+        "occasion": "Casual outings, urban events, and social gatherings."
+    },
+    {
+        "name": "Artistic",
+        "min": 18,
+        "max": 40,
+        "definition": "The artistic style refers to clothing with creative and artistic designs, typically using specific colors and patterns that convey a sense of creativity.",
+        "bodyShape": "Suitable for various body shapes",
+        "bodyType": "Suitable for all body types",
+        "occasion": "Art exhibitions, creative events, and casual gatherings."
+    },
+    {
+        "name": "Minimalist",
+        "min": 20,
+        "max": 50,
+        "definition": "The minimalist style refers to clothing with simple designs and minimal details that emphasize simplicity and functionality.",
+        "bodyShape": "Suitable for various body shapes",
+        "bodyType": "Suitable for medium and slim body types",
+        "occasion": "Casual outings, work environments, and minimalist events."
+    },
+    {
+        "name": "Classic",
+        "min": 25,
+        "max": 60,
+        "definition": "The classic style includes clothing with timeless and traditional designs, typically including suits and formal shirts.",
+        "bodyShape": "Suitable for various body shapes (rectangular and apple)",
+        "bodyType": "Suitable for medium and slim body types",
+        "occasion": "Formal events, business meetings, and upscale gatherings."
+    },
+    {
+        "name": "Retro",
+        "min": 20,
+        "max": 50,
+        "definition": "The retro style refers to clothing inspired by past decades, typically including vintage patterns and designs.",
+        "bodyShape": "Suitable for various body shapes",
+        "bodyType": "Suitable for all body types",
+        "occasion": "Themed parties, retro events, and casual outings."
+    },
+    {
+        "name": "Eco",
+        "min": 18,
+        "max": 40,
+        "definition": "The eco style refers to clothing made from natural and sustainable materials that help preserve the environment, typically featuring simple and comfortable designs.",
+        "bodyShape": "Suitable for various body shapes",
+        "bodyType": "Suitable for all body types",
+        "occasion": "Eco-friendly events, casual outings, and nature gatherings."
+    },
+    {
+        "name": "Futuristic",
+        "min": 20,
+        "max": 40,
+        "definition": "The futuristic style refers to clothing with innovative and modern designs, typically featuring unique details and new technologies.",
+        "bodyShape": "More suitable for slim and average body shapes (rectangular and inverted triangle)",
+        "bodyType": "Suitable for slim body types",
+        "occasion": "Fashion shows, tech events, and futuristic-themed gatherings."
+    },
+    {
+        "name": "Teenage",
+        "min": 13,
+        "max": 19,
+        "definition": "The teenage style refers to clothing designed for teenagers, typically including t-shirts, jeans, and comfortable wear.",
+        "bodyShape": "Suitable for various body shapes",
+        "bodyType": "Suitable for all body types",
+        "occasion": "School events, casual outings, and youth gatherings."
+    },
+    {
+        "name": "Experiential",
+        "min": 20,
+        "max": 40,
+        "definition": "The experiential style refers to clothing that helps create unique and special experiences, typically featuring creative and diverse designs.",
+        "bodyShape": "Suitable for various body shapes",
+        "bodyType": "Suitable for all body types",
+        "occasion": "Special events, experiential gatherings, and creative workshops."
+    },
+    {
+        "name": "New Classic",
+        "min": 25,
+        "max": 50,
+        "definition": "The new classic style refers to clothing with modern and stylish designs that pay new respect to classics.",
+        "bodyShape": "Suitable for various body shapes",
+        "bodyType": "Suitable for medium and slim body types",
+        "occasion": "Formal events, upscale gatherings, and classic-themed parties."
+    },
+    {
+        "name": "Avant-garde",
+        "min": 20,
+        "max": 40,
+        "definition": "The avant-garde style refers to clothing with unconventional and innovative designs that often push the boundaries of fashion.",
+        "bodyShape": "Suitable for various body shapes",
+        "bodyType": "Suitable for all body types",
+        "occasion": "Fashion shows, art events, and avant-garde gatherings."
+    },
+    {
+        "name": "Traditional",
+        "min": 20,
+        "max": 60,
+        "definition": "The traditional style refers to clothing with cultural and historical designs, typically used in special and cultural ceremonies.",
+        "bodyShape": "Suitable for various body shapes",
+        "bodyType": "Suitable for medium and slim body types",
+        "occasion": "Cultural events, traditional ceremonies, and festivals."
+    },
+    {
+        "name": "Minimal",
+        "min": 20,
+        "max": 50,
+        "definition": "The minimal style refers to clothing with simple and efficient designs that emphasize simplicity and beauty.",
+        "bodyShape": "Suitable for various body shapes",
+        "bodyType": "Suitable for medium and slim body types",
+        "occasion": "Casual outings, minimalist events, and work environments."
+    },
+    {
+        "name": "Fantasy",
+        "min": 15,
+        "max": 35,
+        "definition": "The fantasy style refers to clothing with imaginative and unusual designs, typically used in special events and concerts.",
+        "bodyShape": "Suitable for various body shapes",
+        "bodyType": "Suitable for all body types",
+        "occasion": "Themed parties, fantasy events, and concerts."
+    },
+    {
+        "name": "Surrealism",
+        "min": 20,
+        "max": 40,
+        "definition": "The surrealism style refers to clothing with unusual and dreamlike designs, typically featuring specific patterns and colors.",
+        "bodyShape": "Suitable for various body shapes",
+        "bodyType": "Suitable for all body types",
+        "occasion": "Art exhibitions, surreal-themed events, and creative gatherings."
+    },
+    {
+        "name": "Casual Elegance",
+        "min": 25,
+        "max": 50,
+        "definition": "The casual elegance style refers to clothing that is comfortable yet classy, typically used for informal gatherings.",
+        "bodyShape": "Suitable for various body shapes",
+        "bodyType": "Suitable for medium and slim body types",
+        "occasion": "Informal gatherings, brunches, and casual parties."
+    },
+    {
+        "name": "Rustic Chic",
+        "min": 20,
+        "max": 50,
+        "definition": "The rustic chic style refers to clothing with natural and comfortable designs that typically convey a rural and cozy feeling.",
+        "bodyShape": "Suitable for various body shapes",
+        "bodyType": "Suitable for all body types",
+        "occasion": "Outdoor events, rustic weddings, and casual gatherings."
+    },
+    {
+        "name": "Luxury Streetwear",
+        "min": 18,
+        "max": 35,
+        "definition": "The luxury streetwear style refers to clothing with youthful and high-quality designs, typically inspired by street culture.",
+        "bodyShape": "Suitable for various body shapes",
+        "bodyType": "Suitable for all body types",
+        "occasion": "Casual outings, urban events, and fashion shows."
+    },
+    {
+        "name": "Postmodern Fashion",
+        "min": 20,
+        "max": 40,
+        "definition": "The postmodern fashion style refers to clothing with unconventional designs and various combinations that typically challenge fashion standards.",
+        "bodyShape": "Suitable for various body shapes",
+        "bodyType": "Suitable for all body types",
+        "occasion": "Fashion shows, art events, and experimental gatherings."
+    },
+    {
+        "name": "Victorian Fashion",
+        "min": 20,
+        "max": 50,
+        "definition": "The Victorian fashion style refers to clothing with historical and intricate designs, typically used in special events and exhibitions.",
+        "bodyShape": "More suitable for slim and average body shapes (rectangular and apple)",
+        "bodyType": "Suitable for slim body types",
+        "occasion": "Historical reenactments, themed events, and exhibitions."
+    },
+    {
+        "name": "Workwear",
+        "min": 20,
+        "max": 60,
+        "definition": "The workwear style refers to clothing with practical and durable designs, typically used for work and daily activities.",
+        "bodyShape": "Suitable for various body shapes",
+        "bodyType": "Suitable for all body types",
+        "occasion": "Work environments, outdoor activities, and practical settings."
+    },
+    {
+        "name": "Smart Casual",
+        "min": 20,
+        "max": 50,
+        "definition": "The smart casual style refers to clothing that combines comfort and formality, typically suitable for informal meetings and work environments.",
+        "bodyShape": "Suitable for various body shapes",
+        "bodyType": "Suitable for medium and slim body types",
+        "occasion": "Business casual meetings, informal gatherings, and social events."
+    }
+]
