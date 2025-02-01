@@ -83,11 +83,27 @@ public class Main {
         style selectedStyle = matchedStyles.get(selectedStyleIndex).getStyle();
         String request = String.format("a %s with weight %d and height %d and age %d and body shape %s and BMI %.2f for the occasion %s and style %s what items should be worn in what colors?",
                 x.MorF(x.getGender()), x.getWeight(), x.getHeight(), x.getAge(), x.getBodyshape(), x.BMI(),x.getMonasebat() , selectedStyle.getName());
-        String response = sendRequestToOpenAI(request);
-        System.out.println(response);
-    }
+        Scanner cin2 = new Scanner(System.in);
 
-    // متد برای دریافت ورودی عددی
+        while (true) {
+            System.out.println("Do you have anything to add? (Y/N)");
+            String input = cin2.nextLine();
+            if (input.equalsIgnoreCase("Y")||input.equalsIgnoreCase("y")) {
+                String in = cin2.nextLine();
+                request = request + " also " + in;
+                String response = sendRequest(request);
+                System.out.println(response);
+                break;
+            } else if (input.equalsIgnoreCase("N")|| input.equalsIgnoreCase("n")) {
+                String response = sendRequest(request);
+                System.out.println(response);
+                break;
+            } else {
+                System.out.println("Please enter a valid input.");
+            }
+        }
+
+    }
     private static int getIntInput(Scanner cin, String prompt) {
         int value = 0;
         boolean valid = false;
@@ -95,22 +111,20 @@ public class Main {
             System.out.print(prompt);
             try {
                 value = cin.nextInt();
-                cin.nextLine(); // Clear the buffer
+                cin.nextLine();
                 valid = true;
             } catch (java.util.InputMismatchException e) {
                 System.out.println("Invalid input. Please enter a valid integer.");
-                cin.nextLine(); // Clear invalid input
+                cin.nextLine();
             }
         }
         return value;
     }
-
-    // متد برای دریافت مناسبت
     private static String getOccasionInput(Scanner cin) {
         String occasion;
         while (true) {
             System.out.print("What occasion do you want to dress up for? ");
-            System.out.println("everyday\nwedding\noffice\nsports\ngala\noutdoor\nwinter\nbeach\ngym\nparty\nfestival\nconcert\ndinner\ncasual\nschool\ndate\nhome\nrunway");
+            System.out.println("everyday\ncasual\nwedding\ngala\noffice\nmeeting\nsports\ngym\nformal dinner\noutdoor\npicnic\nwinter\nholiday\nbeach\nvacation\nconcert\nedgy\ndate\nretro\nparty\nrunway\nfashion show\nnightlife\nhome");
             occasion = cin.nextLine();
             if (!occasion.trim().isEmpty()) {
                 break;
@@ -145,7 +159,7 @@ public class Main {
         }
         return body;
     }
-    private static String sendRequestToOpenAI(String request) {
+    private static String sendRequest(String request) {
         String urlString = "http://localhost:11434/v1/chat/completions";
         try {
             URL url = new URL(urlString);
@@ -174,10 +188,9 @@ public class Main {
                         response.append(scanner.nextLine());
                     }
                 }
-                // استخراج محتوای content از پاسخ JSON
                 JSONObject jsonResponse = new JSONObject(response.toString());
                 String content = jsonResponse.getJSONArray("choices").getJSONObject(0).getJSONObject("message").getString("content");
-                return content; // فقط محتوای پیام را برمی‌گردانیم
+                return content;
             } else {
                 StringBuilder errorResponse = new StringBuilder();
                 try (Scanner scanner = new Scanner(conn.getErrorStream())) {
@@ -191,20 +204,5 @@ public class Main {
             e.printStackTrace();
             return "Error communicating with OpenAI API.";
         }
-    }
-}
-class MatchedStyle {
-    private style style;
-    private int matchCount;
-
-    public MatchedStyle(style style, int matchCount) {
-        this.style = style;
-        this.matchCount = matchCount;
-    }
-    public style getStyle() {
-        return style;
-    }
-    public int getMatchCount() {
-        return matchCount;
     }
 }

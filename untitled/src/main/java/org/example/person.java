@@ -58,7 +58,7 @@ public class person {
         return weight / (heightInMeters * heightInMeters);
     }
     public String MorF(String gender){
-        if (gender.equals("Male")){
+        if (gender.equals("male")){
             return "man";
         }
         else{
