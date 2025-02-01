@@ -53,31 +53,13 @@ public class person {
     public void setMonasebat(String monasebat) {
         this.monasebat = monasebat;
     }
-    public double BMI() {
-        double heightInMeters = height / 100.0;
-        return weight / (heightInMeters * heightInMeters);
-    }
-    public String body (int bmi){
-        if (bmi < 16.5){
-            return "Severely underweight";
-        }
-        else if (bmi < 18.5){
-            return "Underweight";
-        }
-        else if (bmi < 24.5){
-            return "normal";
-        }
-        else if (bmi < 29.5) {
-            return "overweight";
-        }
-        else if (bmi < 34.5) {
-            return "First degree obesity";
-        }
-        else if (bmi < 39.5) {
-            return "Second degree obesity";
+
+    public String MorF(String gender){
+        if (gender.equals("Male")){
+            return "man";
         }
         else{
-            return "Third grade obesity";
+            return "woman";
         }
     }
 }

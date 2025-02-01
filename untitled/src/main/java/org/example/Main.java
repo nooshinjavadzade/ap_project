@@ -1,11 +1,17 @@
 package org.example;
+
+import org.json.JSONArray;
+import org.json.JSONObject; // اطمینان حاصل کنید که این کتابخانه را اضافه کرده‌اید
 import java.io.IOException;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
-import java.io.BufferedReader;
-import java.io.FileReader;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("hi!");
@@ -16,6 +22,8 @@ public class Main {
         String monasebat;
         String body;
         Scanner cin = new Scanner(System.in);
+
+        // دریافت اطلاعات کاربر
         while (true) {
             System.out.print("Please enter your gender (male or female): ");
             gender = cin.nextLine();
@@ -74,11 +82,32 @@ public class Main {
         matchedStyles.sort(Comparator.comparingInt(MatchedStyle::getMatchCount).reversed());
 
         // چاپ پنج استایل برتر
-        System.out.println("The best styles for you:");
+        System.out.println("Matched Styles:");
         for (int i = 0; i < Math.min(5, matchedStyles.size()); i++) {
-            System.out.println((i+1) + "." + matchedStyles.get(i).getStyle());
+            System.out.println((i + 1) + ": " + matchedStyles.get(i).getStyle().getName());
         }
-        System.out.println("Enter the style you want and I will tell you what items you should wear: ");
+
+        // انتخاب استایل توسط کاربر
+        int selectedStyleIndex = -1;
+        while (true) {
+            System.out.print("Please select a style by entering the corresponding number (1-5): ");
+            selectedStyleIndex = cin.nextInt() - 1; // تبدیل به ایندکس
+            cin.nextLine(); // Clear the buffer
+            if (selectedStyleIndex >= 0 && selectedStyleIndex < matchedStyles.size()) {
+                break;
+            } else {
+                System.out.println("Invalid selection. Please select a number between 1 and " + matchedStyles.size());
+            }
+        }
+
+        // ساخت جمله درخواست با استفاده از کلاس person
+        style selectedStyle = matchedStyles.get(selectedStyleIndex).getStyle();
+        String request = String.format("A %s with a height of %d and a weight of %d, with a %s body shape and a BMI of %.2f that is %s, what items and colors of %s style should she wear for a %s?",
+                x.MorF(x.getGender()), x.getHeight(), x.getWeight(), x.getBodyshape(), x.BMI(), x.body(x.BMI()), selectedStyle.getName(), x.getMonasebat());
+
+        // ارسال درخواست به API اولاما
+        String response = sendRequestToOpenAI(request);
+        System.out.println("Response from OpenAI: " + response);
     }
 
     // متد برای دریافت ورودی عددی
@@ -120,26 +149,68 @@ public class Main {
         String body;
         while (true) {
             System.out.print("Please enter your body shape (rectangle, pear, apple, hourglass): ");
-            System.out.println("(If you don't know what your body shape is, enter 'help')");
             body = cin.nextLine();
             if (body.equals("rectangle") || body.equals("pear") || body.equals("apple") || body.equals("hourglass")) {
                 break;
-            } else if (body.equals("help")) {
-                String filePath = "C:\\\\Users\\\\Asus\\\\Desktop\\\\ap\\\\project\\\\bodyShape.txt";
-                try (BufferedReader br = new BufferedReader(new FileReader(filePath))){
-                    String line;
-                    while ((line = br.readLine()) != null) {
-                        System.out.println(line);
-                    }
-
-                }catch (IOException e) {
-                    System.out.println("Error reading file: " + e.getMessage());
-                }
             } else {
                 System.out.println("Please enter your body shape correctly.");
             }
         }
         return body;
+    }
+
+    // متد برای ارسال درخواست به OpenAI
+    private static String sendRequestToOpenAI(String request) {
+        String urlString = "http://localhost:11434/v1/chat/completions"; // آدرس API اولاما
+
+        try {
+            URL url = new URL(urlString);
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setRequestMethod("POST");
+            conn.setRequestProperty("Content-Type", "application/json");
+            conn.setDoOutput(true);
+
+            // ساخت JSON با استفاده از JSONObject
+            JSONObject json = new JSONObject();
+            json.put("model", "llama3.2"); // مدل شما
+            JSONArray messages = new JSONArray();
+            JSONObject message = new JSONObject();
+            message.put("role", "user");
+            message.put("content", request);
+            messages.put(message);
+            json.put("messages", messages);
+            json.put("max_tokens", 150); // یا هر مقدار دیگری که نیاز دارید
+
+            try (OutputStream os = conn.getOutputStream()) {
+                byte[] input = json.toString().getBytes(StandardCharsets.UTF_8);
+                os.write(input, 0, input.length);
+            }
+
+            // بررسی کد وضعیت HTTP
+            int responseCode = conn.getResponseCode();
+            if (responseCode == HttpURLConnection.HTTP_OK) {
+                // خواندن پاسخ
+                StringBuilder response = new StringBuilder();
+                try (Scanner scanner = new Scanner(conn.getInputStream())) {
+                    while (scanner.hasNextLine()) {
+                        response.append(scanner.nextLine());
+                    }
+                }
+                return response.toString();
+            } else {
+                // خواندن بدنه خطا
+                StringBuilder errorResponse = new StringBuilder();
+                try (Scanner scanner = new Scanner(conn.getErrorStream())) {
+                    while (scanner.hasNextLine()) {
+                        errorResponse.append(scanner.nextLine());
+                    }
+                }
+                return "Error: Received HTTP response code " + responseCode + ". Message: " + errorResponse.toString();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            return "Error communicating with OpenAI API.";
+        }
     }
 }
 
