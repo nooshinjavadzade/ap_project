@@ -53,7 +53,10 @@ public class person {
     public void setMonasebat(String monasebat) {
         this.monasebat = monasebat;
     }
-
+    public double BMI() {
+        double heightInMeters = height / 100.0;
+        return weight / (heightInMeters * heightInMeters);
+    }
     public String MorF(String gender){
         if (gender.equals("Male")){
             return "man";
