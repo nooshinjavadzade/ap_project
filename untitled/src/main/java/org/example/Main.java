@@ -2,10 +2,8 @@ package org.example;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.OutputStream;
+
+import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
@@ -16,7 +14,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("hi!");
+        System.out.println("welcome!");
         String gender;
         int age = 0;
         int weight = 0;
@@ -205,4 +203,34 @@ public class Main {
             return "Error communicating with OpenAI API.";
         }
     }
-}
+    public String Login(String username, String password) {
+        String USER = "C:\\Users\\Asus\\Desktop\\ap\\project\\user.txt";
+        try (BufferedReader br = new BufferedReader(new FileReader(USER))) {
+            String find;
+            while ((find = br.readLine()) != null) {
+                String fileUsername = find.trim();
+                String filePassword = br.readLine().trim();
+                if (fileUsername.equals(username) && filePassword.equals(password)) {
+                    return "Login successful!";
+                }
+            }
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+        return "Invalid username or password. please try again.";
+    }
+    public String Register(String username, String password) {
+        String USER = "C:\\Users\\Asus\\Desktop\\ap\\project\\user.txt";
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(USER, true))) {
+            writer.write(username);
+            writer.newLine();
+            writer.write(password);
+            writer.newLine();
+            return "Registration succesful";
+        } catch (IOException e) {
+            return e.getMessage();
+        }
+    }
+    }
+
+

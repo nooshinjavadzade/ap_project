@@ -61,8 +61,11 @@ public class person {
         if (gender.equals("male")){
             return "man";
         }
-        else{
+        else if (gender.equals("female")){
             return "woman";
+        }
+        else {
+            return "unknown";
         }
     }
 }
