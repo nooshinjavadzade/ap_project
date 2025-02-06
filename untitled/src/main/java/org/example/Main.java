@@ -2,7 +2,6 @@ package org.example;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -12,8 +11,46 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
+
+
 public class Main {
     public static void main(String[] args) {
+        while (true) {
+            System.out.println("Hello. If you want to register, enter R and if you already have an account, enter L:");
+            Scanner in = new Scanner(System.in);
+            char x = in.next().charAt(0);
+            in.nextLine();
+            if (x == 'R') {
+                System.out.println("Please enter your desired username:");
+                String username = in.nextLine();
+                System.out.println("Please enter your desired password:");
+                String password = in.nextLine();
+                String  mewo = Register(username , password);
+                if (mewo.equals("Registration succesful")) {
+                    System.out.println(mewo);
+                    break;
+                }
+                else{
+                    System.out.println("somthing went wrong");
+                    continue;
+                }
+            }
+            else if (x == 'L') {
+                System.out.println("Please enter your username:");
+                String username = in.nextLine();
+                System.out.println("Please enter your password:");
+                String password = in.nextLine();
+                String  mewo = Login(username , password);
+                if (mewo.equals("Login successful!")) {
+                    System.out.println(mewo);
+                    break;
+                }
+                else{
+                    System.out.println("Invalid username/password");
+                    continue;
+                }
+            }
+        }
         System.out.println("welcome!");
         String gender;
         int age = 0;
@@ -203,7 +240,7 @@ public class Main {
             return "Error communicating with OpenAI API.";
         }
     }
-    public String Login(String username, String password) {
+    private static String Login(String username, String password) {
         String USER = "C:\\Users\\Asus\\Desktop\\ap\\project\\user.txt";
         try (BufferedReader br = new BufferedReader(new FileReader(USER))) {
             String find;
@@ -219,7 +256,7 @@ public class Main {
         }
         return "Invalid username or password. please try again.";
     }
-    public String Register(String username, String password) {
+    private static String Register(String username, String password) {
         String USER = "C:\\Users\\Asus\\Desktop\\ap\\project\\user.txt";
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(USER, true))) {
             writer.write(username);
