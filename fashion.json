@@ -222,5 +222,461 @@
         "definition": "A luxurious take on athletic wear, blending comfort with elegance.",
         "bodyShape": "hourglass",
         "occasion": "dinner, upscale"
+    },
+    {
+        "name": "Gothic",
+        "min": 15,
+        "max": 35,
+        "definition": "A dark and mysterious style with dramatic elements.",
+        "bodyShape": "rectangle",
+        "occasion": "concert, edgy"
+    },
+    {
+        "name": "Safari",
+        "min": 20,
+        "max": 50,
+        "definition": "An adventurous style inspired by outdoor exploration.",
+        "bodyShape": "pear",
+        "occasion": "outdoor, picnic"
+    },
+    {
+        "name": "Futuristic",
+        "min": 18,
+        "max": 40,
+        "definition": "A modern style featuring innovative materials and designs.",
+        "bodyShape": "muscular",
+        "occasion": "everyday, casual"
+    },
+    {
+        "name": "Cowboy",
+        "min": 20,
+        "max": 50,
+        "definition": "A rugged style inspired by Western culture.",
+        "bodyShape": "hourglass",
+        "occasion": "outdoor, casual"
+    },
+    {
+        "name": "Rave",
+        "min": 15,
+        "max": 35,
+        "definition": "Bright and colorful styles perfect for electronic music festivals.",
+        "bodyShape": "rectangle",
+        "occasion": "concert, edgy"
+    },
+    {
+        "name": "Fairycore",
+        "min": 18,
+        "max": 40,
+        "definition": "A whimsical style inspired by fairy tales and fantasy.",
+        "bodyShape": "hourglass",
+        "occasion": "festival, outdoor"
+    },
+    {
+        "name": "Tropical",
+        "min": 18,
+        "max": 50,
+        "definition": "Bright and vibrant styles perfect for tropical destinations.",
+        "bodyShape": "pear",
+        "occasion": "beach, vacation"
+    },
+    {
+        "name": "Rockabilly",
+        "min": 20,
+        "max": 45,
+        "definition": "A retro style with a mix of rock and roll influences.",
+        "bodyShape": "rectangle",
+        "occasion": "party, retro"
+    },
+    {
+        "name": "Cyborg",
+        "min": 18,
+        "max": 40,
+        "definition": "A tech-inspired style featuring metallic elements.",
+        "bodyShape": "muscular",
+        "occasion": "everyday, casual"
+    },
+    {
+        "name": "Art Deco",
+        "min": 25,
+        "max": 55,
+        "definition": "A glamorous style inspired by the 1920s and 30s.",
+        "bodyShape": "hourglass",
+        "occasion": "gala, formal dinner"
+    },
+    {
+        "name": "Pajama Chic",
+        "min": 15,
+        "max": 35,
+        "definition": "Comfortable and stylish sleepwear-inspired outfits.",
+        "bodyShape": "rectangle",
+        "occasion": "home, casual"
+    },
+    {
+        "name": "Minimalist Chic",
+        "min": 25,
+        "max": 50,
+        "definition": "A refined and understated style focusing on essentials.",
+        "bodyShape": "pear",
+        "occasion": "office, meeting"
+    },
+    {
+        "name": "Androgynous",
+        "min": 18,
+        "max": 40,
+        "definition": "A gender-neutral style that blends masculine and feminine elements.",
+        "bodyShape": "rectangle",
+        "occasion": "everyday, casual"
+    },
+    {
+        "name": "Kawaii",
+        "min": 15,
+        "max": 30,
+        "definition": "A cute and playful style inspired by Japanese culture.",
+        "bodyShape": "hourglass",
+        "occasion": "festival, outdoor"
+    },
+    {
+        "name": "Eclectic",
+        "min": 20,
+        "max": 50,
+        "definition": "A mix of different styles and influences for a unique look.",
+        "bodyShape": "rectangle",
+        "occasion": "party, retro"
+    },
+    {
+        "name": "Zen",
+        "min": 25,
+        "max": 50,
+        "definition": "A calm and serene style focusing on comfort and simplicity.",
+        "bodyShape": "pear",
+        "occasion": "home, casual"
+    },
+    {
+        "name": "Monochrome",
+        "min": 18,
+        "max": 40,
+        "definition": "A style that uses a single color palette for a cohesive look.",
+        "bodyShape": "hourglass",
+        "occasion": "everyday, casual"
+    },
+    {
+        "name": "Prehistoric",
+        "min": 15,
+        "max": 35,
+        "definition": "A fun and whimsical style inspired by caveman aesthetics.",
+        "bodyShape": "rectangle",
+        "occasion": "themed party, casual"
+    },
+    {
+        "name": "Glam Rock",
+        "min": 18,
+        "max": 40,
+        "definition": "A bold and flashy style inspired by rock music.",
+        "bodyShape": "muscular",
+        "occasion": "concert, edgy"
+    },
+    {
+        "name": "Biker",
+        "min": 20,
+        "max": 50,
+        "definition": "A rugged style inspired by motorcycle culture.",
+        "bodyShape": "rectangle",
+        "occasion": "outdoor, casual"
+    },
+    {
+        "name": "Nautical",
+        "min": 18,
+        "max": 40,
+        "definition": "A maritime-inspired style featuring stripes and sailor motifs.",
+        "bodyShape": "hourglass",
+        "occasion": "beach, vacation"
+    },
+    {
+        "name": "Steampunk",
+        "min": 20,
+        "max": 50,
+        "definition": "A retro-futuristic style combining Victorian and industrial elements.",
+        "bodyShape": "rectangle",
+        "occasion": "themed event, party"
+    },
+    {
+        "name": "Hippie",
+        "min": 15,
+        "max": 40,
+        "definition": "A free-spirited style inspired by the 1960s counterculture.",
+        "bodyShape": "pear",
+        "occasion": "festival, outdoor"
+    },
+    {
+        "name": "Celtic",
+        "min": 20,
+        "max": 50,
+        "definition": "A style inspired by Celtic culture and folklore.",
+        "bodyShape": "hourglass",
+        "occasion": "themed event, festival"
+    },
+    {
+        "name": "Tuxedo Casual",
+        "min": 25,
+        "max": 55,
+        "definition": "A relaxed take on formal wear, combining comfort with elegance.",
+        "bodyShape": "rectangle",
+        "occasion": "dinner, upscale"
+    },
+    {
+        "name": "Punk Rock",
+        "min": 15,
+        "max": 35,
+        "definition": "An edgy style featuring leather and bold accessories.",
+        "bodyShape": "muscular",
+        "occasion": "concert, edgy"
+    },
+    {
+        "name": "Renaissance",
+        "min": 20,
+        "max": 50,
+        "definition": "A historical style inspired by the Renaissance period.",
+        "bodyShape": "hourglass",
+        "occasion": "themed event, gala"
+    },
+    {
+        "name": "Chinoiserie",
+        "min": 25,
+        "max": 55,
+        "definition": "A style inspired by Chinese art and aesthetics.",
+        "bodyShape": "rectangle",
+        "occasion": "themed event, dinner"
+    },
+    {
+        "name": "Pop Art",
+        "min": 18,
+        "max": 40,
+        "definition": "A vibrant style inspired by pop art and culture.",
+        "bodyShape": "pear",
+        "occasion": "art event, casual"
+    },
+    {
+        "name": "Cosplay",
+        "min": 15,
+        "max": 35,
+        "definition": "A style where individuals dress as characters from movies, games, or anime.",
+        "bodyShape": "rectangle",
+        "occasion": "convention, themed party"
+    },
+    {
+        "name": "Sustainable",
+        "min": 20,
+        "max": 50,
+        "definition": "An eco-friendly style focusing on sustainable materials.",
+        "bodyShape": "hourglass",
+        "occasion": "everyday, casual"
+    },
+    {
+        "name": "Glamour",
+        "min": 25,
+        "max": 55,
+        "definition": "A luxurious style featuring high-end fabrics and accessories.",
+        "bodyShape": "pear",
+        "occasion": "gala, formal dinner"
+    },
+    {
+        "name": "Fantasy",
+        "min": 18,
+        "max": 45,
+        "definition": "A whimsical style inspired by fantasy worlds and characters.",
+        "bodyShape": "hourglass",
+        "occasion": "themed event, festival"
+    },
+    {
+        "name": "Monastic",
+        "min": 20,
+        "max": 50,
+        "definition": "A simple and austere style inspired by monastic traditions.",
+        "bodyShape": "rectangle",
+        "occasion": "meditation, retreat"
+    },
+    {
+        "name": "Street Chic",
+        "min": 18,
+        "max": 40,
+        "definition": "A fashionable and trendy style inspired by street culture.",
+        "bodyShape": "pear",
+        "occasion": "everyday, casual"
+    },
+    {
+        "name": "Victorian",
+        "min": 25,
+        "max": 55,
+        "definition": "A romantic style inspired by Victorian fashion.",
+        "bodyShape": "hourglass",
+        "occasion": "themed event, gala"
+    },
+    {
+        "name": "Rugged",
+        "min": 20,
+        "max": 50,
+        "definition": "A tough and durable style suitable for outdoor activities.",
+        "bodyShape": "muscular",
+        "occasion": "hiking, outdoor"
+    },
+    {
+        "name": "Folk",
+        "min": 18,
+        "max": 40,
+        "definition": "A traditional style inspired by folk culture and crafts.",
+        "bodyShape": "rectangle",
+        "occasion": "festival, outdoor"
+    },
+    {
+        "name": "Dapper",
+        "min": 25,
+        "max": 55,
+        "definition": "A sharp and stylish look often associated with menswear.",
+        "bodyShape": "hourglass",
+        "occasion": "wedding, formal"
+    },
+    {
+        "name": "Beach Boho",
+        "min": 18,
+        "max": 40,
+        "definition": "A relaxed and free-spirited style perfect for beach outings.",
+        "bodyShape": "pear",
+        "occasion": "beach, vacation"
+    },
+    {
+        "name": "Urban Explorer",
+        "min": 20,
+        "max": 50,
+        "definition": "A modern style designed for urban adventures.",
+        "bodyShape": "rectangle",
+        "occasion": "city, travel"
+    },
+    {
+        "name": "Couture",
+        "min": 25,
+        "max": 55,
+        "definition": "High-end fashion characterized by custom designs and luxury fabrics.",
+        "bodyShape": "hourglass",
+        "occasion": "runway, gala"
+    },
+    {
+        "name": "Artisan",
+        "min": 18,
+        "max": 40,
+        "definition": "A handcrafted style that emphasizes unique and artisanal pieces.",
+        "bodyShape": "rectangle",
+        "occasion": "market, casual"
+    },
+    {
+        "name": "Retro Futurism",
+        "min": 20,
+        "max": 50,
+        "definition": "A style that combines retro aesthetics with futuristic elements.",
+        "bodyShape": "pear",
+        "occasion": "themed event, party"
+    },
+    {
+        "name": "Nomadic",
+        "min": 15,
+        "max": 35,
+        "definition": "A travel-inspired style focusing on comfort and versatility.",
+        "bodyShape": "rectangle",
+        "occasion": "travel, outdoor"
+    },
+    {
+        "name": "Victorian Gothic",
+        "min": 20,
+        "max": 50,
+        "definition": "A dark and romantic style inspired by Victorian and Gothic elements.",
+        "bodyShape": "hourglass",
+        "occasion": "themed event, gala"
+    },
+    {
+        "name": "Cottage Chic",
+        "min": 18,
+        "max": 40,
+        "definition": "A cozy and rustic style inspired by country living.",
+        "bodyShape": "pear",
+        "occasion": "picnic, outdoor"
+    },
+    {
+        "name": "Ballet",
+        "min": 15,
+        "max": 35,
+        "definition": "A graceful style inspired by ballet aesthetics.",
+        "bodyShape": "hourglass",
+        "occasion": "performance, dance"
+    },
+    {
+        "name": "Glamorous Vintage",
+        "min": 25,
+        "max": 55,
+        "definition": "A luxurious take on vintage styles with modern twists.",
+        "bodyShape": "rectangle",
+        "occasion": "gala, formal"
+    },
+    {
+        "name": "Festival Folk",
+        "min": 18,
+        "max": 40,
+        "definition": "A colorful and vibrant style inspired by folk festivals.",
+        "bodyShape": "hourglass",
+        "occasion": "festival, outdoor"
+    },
+    {
+        "name": "Techwear",
+        "min": 20,
+        "max": 50,
+        "definition": "A functional style featuring high-tech fabrics and designs.",
+        "bodyShape": "muscular",
+        "occasion": "everyday, casual"
+    },
+    {
+        "name": "Minimalist Boho",
+        "min": 18,
+        "max": 40,
+        "definition": "A simple and relaxed style combining minimalist and bohemian elements.",
+        "bodyShape": "rectangle",
+        "occasion": "everyday, casual"
+    },
+    {
+        "name": "Punk Couture",
+        "min": 20,
+        "max": 50,
+        "definition": "A rebellious and high-fashion style blending punk and couture elements.",
+        "bodyShape": "hourglass",
+        "occasion": "runway, gala"
+    },
+    {
+        "name": "Travel Chic",
+        "min": 18,
+        "max": 40,
+        "definition": "A stylish and comfortable look perfect for travel.",
+        "bodyShape": "pear",
+        "occasion": "travel, outdoor"
+    },
+    {
+        "name": "Glamour Punk",
+        "min": 15,
+        "max": 35,
+        "definition": "A bold and edgy style combining glamour and punk influences.",
+        "bodyShape": "rectangle",
+        "occasion": "concert, edgy"
+    },
+    {
+        "name": "Rugged Chic",
+        "min": 20,
+        "max": 50,
+        "definition": "A stylish yet durable look suitable for outdoor adventures.",
+        "bodyShape": "muscular",
+        "occasion": "hiking, outdoor"
+    },
+    {
+        "name": "Artistic",
+        "min": 18,
+        "max": 40,
+        "definition": "A creative style that emphasizes unique and artistic expressions.",
+        "bodyShape": "hourglass",
+        "occasion": "gallery, casual"
     }
 ]
